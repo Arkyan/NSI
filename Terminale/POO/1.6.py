@@ -3,6 +3,29 @@ class Personnes :
         self.prenom = prenom
         self.genre = genre 
         self.age = age
+    def __repr__(self) : 
+        return f"{self.prenom,self.genre,self.age}"
+
+    def __str__(self) : 
+        return f"{self.prenom,self.genre,self.age}"
+
+    def get_age(self) :
+        print("Récupération de l'age de la personne")
+        return self.age
+
+    def set_age(self, ag) :
+        print("Changement de l'age de la personne")
+        self.age = ag
+        return self.age
+
+    def del_genre(self) :
+        print("Suppression du genre de la personne")
+        self.genre = ""
+        return self.genre
+
+    def set_genre(self, genr):
+        self.genre = genr
+        return self.genre
         
 alex = Personnes("Alex","masculin",15)
 bob = Personnes("Bob","masculin",20)
@@ -29,15 +52,17 @@ print("Le prénom d'Elsa est",elsa.prenom)
 print("Le genre d'Elsa est",elsa.genre)
 print("L'âge d'Elsa est",elsa.age)
 
-def __repr__(self) : 
-    return f"{self.prenom,self.genre,self.age}"
-
-def __str__(self) : 
-    return f"{self.prenom,self.genre,self.age}"
-
-def get_age(self) :
-    print("Récupération de l'age de la personne")
-    return self.age
-
 print("Modification avec getter et setter")
-print("")
+print("L'age d'Elsa est : ", elsa.get_age())
+print("Les attributs d'elsa sont : ",elsa) 
+
+elsa.set_age(98)
+print("L'age d'Elsa est : ", elsa.get_age())
+print("Les attributs d'elsa sont : ",elsa) 
+
+elsa.del_genre()
+print("Les attributs d'elsa sont : ",elsa) 
+
+elsa.set_genre("masculin")
+print("Les attributs d'elsa sont : ",elsa) 
+

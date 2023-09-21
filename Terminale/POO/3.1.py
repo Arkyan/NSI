@@ -25,8 +25,17 @@ class CompteBancaire :
     def affichage(self) :
         print("Le compte bancaire appartient à :", self.get_nom())
         print("Le solde est de :", self.get_solde(),"$")
+    def set_nom(self, nomm) :
+        self.nom = nomm
+        return self.nom
+    def piratage(self) :
+        Compte2547.set_nom("Jules")
+        return 
+
 
 Compte2547 = CompteBancaire("Bob",300.1)
+Compte2547.affichage()
+Compte2547.piratage() 
 Compte2547.affichage()
 
      

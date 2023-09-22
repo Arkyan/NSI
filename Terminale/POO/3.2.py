@@ -56,7 +56,21 @@ class Table :
         self.stock = stook
         return self.stock
     def AFFICHAGE(self) :
-        print("")
+        print("La table de référence : ", self.get_ref())
+        print("Ses caractéristiques sont : ")
+        print("Matière : ", self.get_matiere())
+        print("Masse : ", self.get_masse())
+        print("Les dimensions :", self.get_longueur(), "cm x", self.get_largeur(), "cm x", self.get_hauteur(), "cm")
+        print("Son prix de vente est de : ", self.get_prixvente())
+
+    def calculgain(self) :
+        gain = self.prixvente - self.prixfab
+        return gain
+    
+c02468 = Table("c02468","plastique",30,180,100,70,950,50,10)
+c02468.AFFICHAGE()
+print("Le gain est de :", c02468.calculgain(),"$")
+
     
 
 

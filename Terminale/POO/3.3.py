@@ -34,4 +34,3 @@ class Carte:
         self.nom = noom
         self.valeur = valeeur
 carte1 = Carte("pique","2",2)
-zbub

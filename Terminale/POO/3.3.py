@@ -33,4 +33,5 @@ class Carte:
     def set_nom(self, noom,valeeur) :
         self.nom = noom
         self.valeur = valeeur
-carte1 = Carte("pique","2",2)
+carte1 = Carte("pique","2",2) 
+

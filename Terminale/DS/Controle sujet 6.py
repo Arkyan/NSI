@@ -13,8 +13,7 @@ print("La position de 2 dans la liste est :" ,recherche([2,3,5,2,4],2))
 print("--------------------------------------------------------------")
 
 #Exo 2
- #import dela fonction racine carré
-#from math import sqrt
+#import dela fonction racine carré
 def distance(point1,point2) :
     """Calcule et renvoie la distance entre deux points"""
     return sqrt((point1[0] - point2[0])**2 + ((point1[1] - point2[1]))**2)

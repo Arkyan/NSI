@@ -7,7 +7,7 @@ class Pile :
         return self.pile == []
     def depiler(self) :
         if self.vide() :
-            return print("La pile est vide")
+            return print("La pile est vide donc vous ne pouvez pas dépiler !")
         else :
             return self.pile.pop()
     def taille (self) :
@@ -49,5 +49,11 @@ print("La taille de la pile est : ", pile.taille())
 print("On dépile", pile.depiler())
 print(str(pile))
 print("On dépile encore !!!")        
+print(pile.depiler())
+print(str(pile))
 
-
+class Maillon : 
+    def __init__(self, valeur, suivant) :
+        self.valeur = valeur
+        self.suivant = suivant
+    def 

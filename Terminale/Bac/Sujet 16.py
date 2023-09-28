@@ -12,6 +12,12 @@ def recherche_indices_classement(elt, tab):
             l_eg.append(i)
     return l_inf, l_eg, l_sup
 
+print(recherche_indices_classement(3, [1, 3, 4, 2, 4, 6, 3, 0]))
+print(recherche_indices_classement(3, [1, 4, 2, 4, 6, 0]))
+print(recherche_indices_classement(3, [1, 1, 1, 1]))
+print(recherche_indices_classement(3, []))
+print("---------------------------")
+
 #Exo 2 
 resultats = {'Dupont': {
                            'DS1': [15.5, 4],
@@ -43,3 +49,6 @@ def moyenne(nom, dico_result):
         return round( total_points / total_coefficients, 1 )
     else:
         return -1
+
+print("La moyenne de Dupont est :" , moyenne('Dupont', resultats))
+print("La moyenne de Durand est :" , moyenne('Durand', resultats))

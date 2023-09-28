@@ -15,6 +15,7 @@ from random import randint
 
 def plus_ou_moins():
     nb_mystere = randint(1, 99)
+    print(nb_mystere)
     nb_test = int(input("Proposez un nombre entre 1 et 99 : "))
     compteur = 1
 
@@ -30,3 +31,5 @@ def plus_ou_moins():
         print("Nombre d'essais: ", compteur)
     else:
         print("Perdu ! Le nombre etait ", nb_mystere)
+
+plus_ou_moins()

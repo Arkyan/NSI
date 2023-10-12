@@ -16,7 +16,7 @@ print(mini(t_moy, annees))
 def inverse_chaine(chaine):
     result = ""
     for caractere in chaine:
-       result = caractere + result
+       result = caractere + result 
     return result
 
 def est_palindrome(chaine):

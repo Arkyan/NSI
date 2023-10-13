@@ -9,4 +9,3 @@ def puissance(nbr, E) :
         return nbr * puissance(nbr, E-1)
 
 print("Le nombre ",nbr," à la puissance ", E, " est égal à : ", puissance(nbr, E))
-

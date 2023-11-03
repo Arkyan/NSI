@@ -18,7 +18,7 @@ print(recherche([2, 3, 4, 6, 7], 5))
 
 #Exo 2
 ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-def position_alphabet(lettre):
+def position_alphabet(lettre): 
     return ord(lettre) - ord('A')
 def cesar(message, decalage):
     resultat = ''
@@ -30,5 +30,6 @@ def cesar(message, decalage):
             resultat = resultat + c
     return resultat 
 
-print( cesar('BONJOUR A TOUS. VIVE LA MATIERE NSI !', 4))
+print(cesar('BONJOUR A TOUS. VIVE LA MATIERE NSI !', 4))
 print(cesar('GTSOTZW F YTZX. ANAJ QF RFYNJWJ SXN !', -5))
+

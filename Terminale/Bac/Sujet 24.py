@@ -39,3 +39,5 @@ def fusion(lst1, lst2):
 
 print(fusion([1, 6, 10], [0, 7, 8, 9]))
 assert fusion([1, 6, 10], [0, 7, 8, 9]) == [0, 1, 6, 7, 8, 9, 10]
+
+ 

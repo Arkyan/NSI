@@ -7,3 +7,4 @@ def puissance(nbr, E) :
         return 1
     else :
         return nbr * puissance(nbr, E-1)
+    

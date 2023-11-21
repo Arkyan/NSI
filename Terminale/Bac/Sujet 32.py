@@ -1,3 +1,4 @@
+
 #Exo 1
 def min_et_max(tab):
     mini = tab[0]
@@ -31,7 +32,7 @@ class Carte:
         return valeurs[self.valeur - 1]
 
     def get_couleur(self):
-        couleurs = ['pique', 'coeur', 'carreau', 'trÃ¨fle']
+        couleurs = ['pique', 'coeur', 'carreau', 'trèfle']
         return couleurs[self.couleur - 1]
 
 class Paquet_de_cartes:
@@ -43,7 +44,7 @@ class Paquet_de_cartes:
             
 
     def get_carte(self, pos):
-        assert pos < 52 and pos > -1, "paramÃ¨tre pos invalide"
+        assert pos < 52 and pos > -1, "paramètre pos invalide"
         return self.paquet[pos]
 
 jeu = Paquet_de_cartes()

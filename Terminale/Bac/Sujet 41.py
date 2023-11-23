@@ -30,6 +30,6 @@ print(rendu_glouton(291, 0))
 print(rendu_glouton(291,1))
 assert(rendu_glouton(67, 0) == [50, 10, 5, 2])
 assert(rendu_glouton(291, 0) == [100, 100, 50, 20, 20, 1])
-assert(rendu_glouton(291, 1) == [100, 100, 50, 20, 20, 1])
+assert(rendu_glouton(291, 1) == [50, 50, 50, 50, 50, 20, 20, 1])
 
 

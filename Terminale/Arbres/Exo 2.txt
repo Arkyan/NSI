@@ -1,0 +1,17 @@
+La racine de cet arbre est "/".
+Il y a 13 nœuds : "/", "bin", "boot", "dev", "etc", "home", "lib", "media", "mnt", "proc", "root", "sbin", "tmp", "usr", "var", "nsi", "documents", "photos", "videos", "lettres", "cours".
+Il y a 11 feuilles : "bin", "boot", "dev", "etc", "lib", "media", "mnt", "proc", "root", "sbin", "tmp", "photos", "videos", "lettres", "cours".
+Il y a 5 branches principales sous la racine ("/"): "home", "usr", "nsi", "documents", "var".
+Il y a 5 nœuds internes : "/", "usr", "home", "nsi", "documents".
+Les descendants de "documents" sont "lettres" et "cours".
+L'ascendant de "documents" est "nsi".
+Les frères de "documents" sont "photos" et "videos".
+La hauteur de l’arbre si celle de la racine est 1 est de 4.
+La profondeur de l’arbre si celle de la racine est 1 est également de 4 (en comptant la racine comme niveau 1).
+La hauteur du nœud "documents" si celle de la racine est 1 est de 2, car il est à deux niveaux de la racine.
+La profondeur du nœud "lettres" si celle de la racine est 1 est de 4.
+L'arité du nœud "NSI" est 3, car il a trois enfants directs ("documents", "photos", "videos").
+L'arité du nœud "documents" est 2, car il a deux enfants ("lettres", "cours").
+L'arité de cet arbre est 3, c'est le plus grand nombre d'enfants qu'un seul nœud possède, dans ce cas, le nœud "NSI".
+La taille de cet arbre est le nombre total de nœuds, qui est de 21.
+Le chemin du nœud "cours" est "/" -> "home" -> "nsi" -> "documents" -> "cours".

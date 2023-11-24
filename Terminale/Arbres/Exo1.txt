@@ -1,0 +1,17 @@
+La racine de cet arbre est A.
+Il y a 9 nœuds dans cet arbre : A, B, C, D, E, F, G, H, I, J.
+Il y a 4 feuilles : E, F, G, J.
+Il y a 3 branches.
+Il y a 5 nœuds internes : A, B, C, D, I.
+Les descendants de D sont H et I.
+L'ascendant de D est C.
+D n’a pas de frères.
+La hauteur de l'arbre est 3.
+La profondeur de l'arbre est 3.
+La hauteur du nœud F est 1.
+La profondeur du nœud E est 2.
+L'arité du nœud F est 0.
+L'arité du nœud C est 2.
+L'arité de l'arbre est 3, car le nœud A a trois enfants.
+La taille de l'arbre est le nombre total de nœuds, donc 10.
+Le chemin du nœud J est A, B, I, J.

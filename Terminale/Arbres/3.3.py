@@ -53,3 +53,26 @@ def BFS(arbre):
 
 print("---------- C'est la BFS (Breadth First Search), parcours en largeur d’abord ----------")
 print("Le parcours en largeur d’abord de l'arbre donne la liste suivante : ",BFS(arbr)) 
+
+def prefixe(arbre):
+    resultat = []
+    resultat.append(arbre._racine)
+    if arbre._gauche is not None:
+        resultat.append(prefixe(arbre._gauche))
+    if arbre._droite is not None:
+        resultat.append(prefixe(arbre._droite))
+    return resultat
+
+def aplatirListe(liste):
+    for element in liste:
+        if type(element) == list:
+            aplatirListe(element)
+        else:
+            listePlate.append(element)
+        return listePlate
+
+print("---------- C'est la DFS (Depth First Search), parcours préfixe en profondeur d’abord ----------")
+
+print("Le parcours préfixe en profondeur de l'arbre donne la liste suivante : ",prefixe(arbr)) 
+listePlate = [] 
+print("Le parcours préfixe en profondeur de l'arbre donne la liste aplatie suivante : ",aplatirListe(prefixe(arbr)))

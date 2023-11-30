@@ -1,3 +1,4 @@
+#3.3
 class Arbre: # Arbre binaire en POO
     def __init__(self,valeur):
         self._racine = valeur
@@ -35,8 +36,8 @@ print("La racine du sag du sad de l'arbre est : ", arbr.get_droite().get_gauche(
 print("La racine du sag du sad de l'arbre est : ", arbr.get_gauche().get_gauche().get_racine()) 
 print("La racine du sag du sad de l'arbre est : ", arbr.get_droite().get_droite().get_gauche().get_racine()) 
 
+#3.3.1.1
 from queue import Queue
-
 def BFS(arbre):
     file = Queue()
     file.put(arbre)
@@ -54,6 +55,7 @@ def BFS(arbre):
 print("---------- C'est la BFS (Breadth First Search), parcours en largeur d’abord ----------")
 print("Le parcours en largeur d’abord de l'arbre donne la liste suivante : ",BFS(arbr)) 
 
+#3.3.1.2.1
 def prefixe(arbre):
     resultat = []
     resultat.append(arbre._racine)
@@ -76,3 +78,56 @@ print("---------- C'est la DFS (Depth First Search), parcours préfixe en profon
 print("Le parcours préfixe en profondeur de l'arbre donne la liste suivante : ",prefixe(arbr)) 
 listePlate = [] 
 print("Le parcours préfixe en profondeur de l'arbre donne la liste aplatie suivante : ",aplatirListe(prefixe(arbr)))
+
+def infixe(arbre):
+    resultat = []
+    if arbre._gauche is not None:
+        resultat.append(infixe(arbre._gauche))
+    resultat.append(arbre._racine)
+    if arbre._droite is not None:
+        resultat.append(infixe(arbre._droite))
+    return resultat
+
+
+#3.3.2
+def taille(arbre) :
+    if arbre is None :
+        return 0
+    else :
+        return 1 + taille(arbre._gauche) + taille(arbre._droite)
+    
+#3.3.3
+def hauteur(arbre) :
+    if arbre is None :
+        return 0
+    else :
+        return 1 + max(hauteur(arbre._gauche), hauteur(arbre._droite))
+   
+#3.3.4  
+def recherche(arbre, valeur) :
+    if arbre is None :
+        return False
+    elif arbre._racine == valeur :
+        return True
+    else :
+        return recherche(arbre._gauche, valeur) or recherche(arbre._droite, valeur)
+print("------ Recherche d'une clé (valeur) dans l'arbre ------")
+for val in range(0,21):
+    print("La clé",val,"est dans l'arbre : ",recherche(arbr,val)) 
+
+#4.1
+def aplatirListe(liste,listeplateparcoursinfixe) :
+    for element in liste :
+        if type(element) == list :
+            aplatirListe(element,listeplateparcoursinfixe)
+        else :
+            listeplateparcoursinfixe.append(element)
+    return listeplateparcoursinfixe
+
+def est_abr(arbre,list) :
+    listeplateparcoursinfixe = []
+    listeplateparcoursinfixe = aplatirListe(infixe(arbre),listeplateparcoursinfixe)
+    return listeplateparcoursinfixe == list
+
+
+

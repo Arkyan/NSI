@@ -130,4 +130,3 @@ def est_abr(arbre,list) :
     return listeplateparcoursinfixe == list
 
 
-

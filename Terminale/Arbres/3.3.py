@@ -130,3 +130,77 @@ def est_abr(arbre,list) :
     return listeplateparcoursinfixe == list
 
 
+
+# ARBRE BINAIRE N°1 mais pas un arbre binaire de recherche
+print("----- Arbre N°1 pas ABR -----")
+arbr = Arbre(4)
+# Instancier / Créer l'arbre dont le nœud a pour valeur 4, les sag
+# et sad sont None
+print(arbr) # Afficher l'arbre
+arbr.set_gauche(Arbre(3))
+# Instancier / Créer l'arbre dont le nœud a pour valeur 3, les sag
+# et sad sont None pour sag de a
+print(arbr) # Afficher l'arbre
+arbr.set_droite(Arbre(1))
+# Instancier / Créer l'arbre dont le nœud a pour valeur 1, les sag
+# et sad sont None pour sad de a
+print(arbr) # Afficher l'arbre
+arbr.get_droite().set_gauche(Arbre(2))
+# Instancier / Créer l'arbre dont le nœud a pour valeur 2, les sag
+# et sad sont None pour sag du sad de a
+print(arbr) # Afficher l'arbre
+arbr.get_droite().set_droite(Arbre(7))
+# Instancier / Créer l'arbre dont le nœud a pour valeur 7, les sag
+# et sad sont None pour sad du sad de a
+print(arbr) # Afficher l'arbre
+arbr.get_gauche().set_gauche(Arbre(6))
+# Instancier / Créer l'arbre dont le nœud a pour valeur 6, les sag
+# et sad sont None pour sag du sag de a
+print(arbr) # Afficher l'arbre
+arbr.get_droite().get_droite().set_gauche(Arbre(9))
+# Instancier / Créer l'arbre dont le nœud a pour valeur 9, les sag
+# et sad sont None pour sag du sag du sad de a
+print(arbr) # Afficher l'arbre
+# ARBRE BINAIRE N°2 et un arbre binaire de recherche
+print("\n----- Arbre N°2 ABR -----")
+arbr2 = Arbre(5)
+# Instancier / Créer l'arbre dont le nœud a pour valeur 4, les sag
+# et sad sont None
+print(arbr2) # Afficher l'arbre
+arbr2.set_gauche(Arbre(2))
+# Instancier / Créer l'arbre dont le nœud a pour valeur 3, les sag
+# et sad sont None pour sag de a
+print(arbr2) # Afficher l'arbre
+arbr2.set_droite(Arbre(7))
+# Instancier / Créer l'arbre dont le nœud a pour valeur 1, les sag
+# et sad sont None pour sad de a
+print(arbr2) # Afficher l'arbre
+arbr2.get_droite().set_gauche(Arbre(6)) 
+# Instancier / Créer l'arbre dont le nœud a pour valeur 2, les sag
+# et sad sont None pour sag du sad de a
+print(arbr2) # Afficher l'arbre
+arbr2.get_droite().set_droite(Arbre(8))
+# Instancier / Créer l'arbre dont le nœud a pour valeur 7, les sag
+# et sad sont None pour sad du sad de a
+print(arbr2) # Afficher l'arbre
+arbr2.get_gauche().set_gauche(Arbre(0))
+# Instancier / Créer l'arbre dont le nœud a pour valeur 6, les sag
+# et sad sont None pour sag du sag de a
+print(arbr2) # Afficher l'arbre
+arbr2.get_gauche().set_droite(Arbre(3))
+# Instancier / Créer l'arbre dont le nœud a pour valeur 6, les sag
+# et sad sont None pour sag du sag de a
+print(arbr2) # Afficher l'arbre
+print("\n---------- Test ABR ----------")
+print("\n--- Test arbre binaire N°1 pas ABR ---")
+print("Le parcours infixe en profondeur de l'arbre N°1 donne la liste suivante : ",infixe(arbr))
+# Créer une liste de liste contenant le parcours infixe
+print("Le parcours infixe en profondeur de l'arbre N°1 donne la liste aplatie suivante : ",aplatirListe(infixe(arbr),[]))
+# Créer une liste aplatie contenant le parcours infixe
+print("L'arbre binaire N°1 est un arbre binaire de recherche : ", est_abr(arbr, aplatirListe(infixe(arbr),[])))
+# Vérifier si l'arbre est une ABR en vérifiant si la liste aplatie
+# est ordonnée
+print("\n--- Test arbre binaire N°2 ABR ---")
+print("Le parcours infixe en profondeur de l'arbre N°1 donne la liste suivante : ",infixe(arbr2))
+print("Le parcours infixe en profondeur de l'arbre N°2 donne la liste aplatie suivante : ",aplatirListe(infixe(arbr2),[]))
+print("L'arbre binaire N°2 est un arbre binaire de recherche : ", est_abr(arbr2, aplatirListe(infixe(arbr2),[]))) 

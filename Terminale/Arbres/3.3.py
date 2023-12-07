@@ -402,9 +402,3 @@ def draw(self):
     plt.show()
     # Afficher le schéma
 
-def parcoursPre(self) :
-    if self.estVide():
-        return []
-    else:
-        return [self._racine] + self._gauche.parcoursPre() + self._droite.parcoursPre()
-        

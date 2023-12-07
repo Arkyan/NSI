@@ -10,7 +10,14 @@ def multiplication(n1,n2):
     for i in range(n2):
         s = s+n1
     return s
-
+print(multiplication(3, 5))
+print(multiplication(-4, -8))
+print(multiplication(-2, 6))
+print(multiplication(-2, 0))
+assert multiplication(3, 5) == 15
+assert multiplication(-4, -8) == 32
+assert multiplication(-2, 6) == -12
+assert multiplication(-2, 0) == 0
 #Exo 2
 def chercher(tab, n, i, j):
     if i < 0 or j > len(tab):
@@ -24,3 +31,13 @@ def chercher(tab, n, i, j):
         return chercher(tab, n, i, m-1)
     else:
         return m
+    
+print(chercher([1, 5, 6, 6, 9, 12], 7, 0, 10))
+print(chercher([1, 5, 6, 6, 9, 12], 7, 0, 5))
+print(chercher([1, 5, 6, 6, 9, 12], 9, 0, 5))
+print(chercher([1, 5, 6, 6, 9, 12], 6, 0, 5))
+
+assert chercher([1, 5, 6, 6, 9, 12], 7, 0, 10) == None
+assert chercher([1, 5, 6, 6, 9, 12], 7, 0, 5) == None
+assert chercher([1, 5, 6, 6, 9, 12], 9, 0, 5) == 4
+assert chercher([1, 5, 6, 6, 9, 12], 6, 0, 5) == 2

@@ -165,6 +165,29 @@ class Arbre:
         else:
             return 1 + self._gauche.taille() + self._droite.taille()
         
+    def rechercher(self, valeur) :
+        if self._racine is None :
+            return False
+        elif self._racine == valeur :
+            return True
+        else :
+            if valeur < self._racine :
+                return self._gauche.rechercher(valeur)
+            else :
+                return self._droite.rechercher(valeur)
+            
+    def minimum (self):
+        Arbre = self 
+        while Arbre._gauche is not None :
+            Arbre = Arbre._gauche
+        return Arbre._racine
+    
+    def maximum (self):
+        Arbre = self 
+        while Arbre._droite is not None :
+            Arbre = Arbre._droite
+        return Arbre._racine
+        
     
 
 def listeToArbre(Lst):
@@ -181,95 +204,11 @@ listeToArbre(Liste)
 
 print("La hauteur de l'arbre binaire de recherche est : ",arb.hauteur()) 
 print("Le parcours en largeur de l'arbre binair de recherche est :",arb.parcoursLargeur())
-
-def parcoursPre(self) :
-    if self.estVide():
-        return []
-    else:
-        return [self._racine] + self._gauche.parcoursPre() + self._droite.parcoursPre()
-        
-def _parcoursPre(self, l) :
-    if self.estVide():
-        return []
-    else:
-        return [self._racine] + self._gauche._parcoursPre() + self._droite._parcoursPre()
-    
-def parcoursinf(self, l) :
-    if self.estVide():
-        return []
-    else:
-        return [self._racine] + self._gauche.parcoursinf() + self._droite.parcoursinf()
-    
-def _parcoursinf(self, l) :
-    if self.estVide():
-        return []
-    else:
-        return [self._racine] + self._gauche._parcoursinf() + self._droite._parcoursinf()
-    
-def parcourspost(self, l) :
-    if self.estVide():
-        return []
-    else:
-        return [self._racine] + self._gauche.parcourspost() + self._droite.parcourspost()
-    
-def _parcourspost(self, l) :
-    if self.estVide():
-        return []
-    else:
-        return [self._racine] + self._gauche._parcourspost() + self._droite._parcourspost()
-
-print("Le parcours préfixe de l'arbre binaire de recherche est :",arb.parcoursPre())
-print("Le parcours infixe de l'arbre binaire de recherche est :",arb.parcoursInf())
-print("Le parcours postfixe de l'arbre binaire de recherche est : ",arb.parcoursPost()) 
-
-def parcoursLargeur(self):
-    if self.estVide():
-        return []
-    else :
-        return [self._racine] + self._gauche.parcoursLargeur() + self._droite.parcoursLargeur()
-
-def _parcoursLargeur(self):
-    if self.estVide():
-        return []
-    else :
-        return [self._racine] + self._gauche._parcoursLargeur() + self._droite._parcoursLargeur()
-
-print("Le parcours en largeur de l'arbre binaire de recherche est : ",arb.parcoursLargeur()) 
-
-def taille(self) :
-    if self.estVide():
-        return 0
-    else:
-        return 1 + self._gauche.taille() + self._droite.taille()
-    
 print("La taille de l'arbre binaire de recherche est : ",arb.taille())
 
-def rechercher(self,valeur) :
-    if self.estVide():
-        return False
-    elif self._racine == valeur :
-        return True
-    elif self._racine > valeur :
-        return self._gauche.rechercher(valeur)
-    else :
-        return self._droite.rechercher(valeur)
+            
+for val in range(0, 30) :
+    print("La clé", val, "est dans l'arbre binaire de recherche", arb.rechercher(val))
     
-for val in range(0,30):
-    print("La clé",val,"est dans l'arbre binaire de recherche : ",arb.rechercher(val))
-
-def minimum (self) :
-    if self.estVide():
-        return None
-    elif self._gauche.estVide():
-        return self._racine
-    else:
-        return self._gauche.minimum()
-    
-def maximum (self) :
-    Arbre = self
-    while not Arbre._droite.estVide():
-        Arbre = Arbre._droite
-    return Arbre._racine
-
-print("Le maximum de l'arbre binaire de recherche est " + str(arb.maximum()))
-print("Le minimum de l'arbre binaire de recherche est " + str(arb.minimum()))
+print("Le maximum de l'arbre binaire de recherche est : ",arb.maximum())
+print("Le minimum de l'arbre binaire de recherche est : ",arb.minimum())

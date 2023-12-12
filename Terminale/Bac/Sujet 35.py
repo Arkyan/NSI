@@ -1,4 +1,8 @@
 #Exo 1
+a = [1, 0, 1, 0, 1, 1, 0, 1]
+b = [0, 1, 1, 1, 0, 1, 0, 0]
+c = [1, 1, 0, 1]
+d = [0, 0, 1, 1]
 def ou_exclusif(t1, t2):
     n = len(t1)
     t = [0]*n
@@ -8,6 +12,13 @@ def ou_exclusif(t1, t2):
         else :
             t[i] = 1
     return t
+
+print(ou_exclusif(a, b))
+print(ou_exclusif(c, d))
+assert ou_exclusif(a, b) == [1, 1, 0, 1, 1, 0, 0, 1]
+assert ou_exclusif(c, d) == [1, 1, 1, 0]
+
+print("-----------------------------")
 
 #Exo 2
 c2 = [[1, 7], [7, 1]]
@@ -48,4 +59,26 @@ class Carre:
                 return False
 
         return True
-    
+
+liste = (3, 4, 5, 4, 4, 4, 5, 4, 3)
+c3t = Carre(liste, 3)
+c3t.affiche()
+print(c3t.est_semimagique())
+
+##########################################################
+
+c2 = [[1, 7], [7, 1]]
+c3 = [[3, 4, 5], [4, 4, 4], [5, 4, 3]]
+c3bis = [[2, 9, 4], [7, 0, 3], [6, 1, 8]]
+
+c2_class = Carre([1, 7, 7, 1], 2)
+c3_class = Carre([3, 4, 5, 4, 4, 4, 5, 4, 3], 3)
+c3bis_class = Carre([2, 9, 4, 7, 0, 3, 6, 1, 8], 3)
+
+print("c2_class.est_semimagique() =", c2_class.est_semimagique())
+print("c3_class.est_semimagique() =", c3_class.est_semimagique())
+print("c3bis_class.est_semimagique() =", c3bis_class.est_semimagique())
+
+assert c2_class.est_semimagique() == True
+assert c3_class.est_semimagique() == True
+assert c3bis_class.est_semimagique() == False 

@@ -61,11 +61,8 @@ class Carre:
         return True
 
 liste = (3, 4, 5, 4, 4, 4, 5, 4, 3)
-c3t = Carre(liste, 3)
-c3t.affiche()
-print(c3t.est_semimagique())
-
-##########################################################
+c3 = Carre(liste, 3)
+c3.affiche()
 
 c2 = [[1, 7], [7, 1]]
 c3 = [[3, 4, 5], [4, 4, 4], [5, 4, 3]]
@@ -75,9 +72,9 @@ c2_class = Carre([1, 7, 7, 1], 2)
 c3_class = Carre([3, 4, 5, 4, 4, 4, 5, 4, 3], 3)
 c3bis_class = Carre([2, 9, 4, 7, 0, 3, 6, 1, 8], 3)
 
-print("c2_class.est_semimagique() =", c2_class.est_semimagique())
-print("c3_class.est_semimagique() =", c3_class.est_semimagique())
-print("c3bis_class.est_semimagique() =", c3bis_class.est_semimagique())
+print( c2_class.est_semimagique())
+print(c3_class.est_semimagique())
+print(c3bis_class.est_semimagique())
 
 assert c2_class.est_semimagique() == True
 assert c3_class.est_semimagique() == True

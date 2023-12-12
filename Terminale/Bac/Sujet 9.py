@@ -18,6 +18,8 @@ assert multiplication(3, 5) == 15
 assert multiplication(-4, -8) == 32
 assert multiplication(-2, 6) == -12
 assert multiplication(-2, 0) == 0
+
+print("--------------------")
 #Exo 2
 def chercher(tab, n, i, j):
     if i < 0 or j > len(tab):

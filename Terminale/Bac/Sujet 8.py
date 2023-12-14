@@ -13,6 +13,8 @@ print(max_dico({'Alan': 222, 'Ada': 201, 'Eve': 220, 'Tim': 50}))
 assert max_dico({'Bob': 102, 'Ada': 201, 'Alice': 103, 'Tim': 50}) == ('Ada', 201)
 assert max_dico({'Alan': 222, 'Ada': 201, 'Eve': 220, 'Tim': 50}) == ('Alan', 222)
 
+print('-------------------------')
+
 #Exo 2
 class Pile:
 

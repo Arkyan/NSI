@@ -11,6 +11,8 @@ print(maxliste([-27, 24, -3, 15]))
 assert maxliste([98, 12, 104, 23, 131, 9]) == 131
 assert maxliste([-27, 24, -3, 15]) == 24
 
+print("--------------------------")
+
 #Exo 2
 class Pile:
     def __init__(self):

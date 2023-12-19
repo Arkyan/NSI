@@ -6,6 +6,11 @@ def maxliste(tab):
             maxi = v
     return maxi
 
+print(maxliste([98, 12, 104, 23, 131, 9]))
+print(maxliste([-27, 24, -3, 15]))
+assert maxliste([98, 12, 104, 23, 131, 9]) == 131
+assert maxliste([-27, 24, -3, 15]) == 24
+
 #Exo 2
 class Pile:
     def __init__(self):
@@ -33,3 +38,10 @@ def parenthesage(ch):
             else:
                 p.depiler()
     return p.est_vide()
+
+print(parenthesage("((()())(()))"))
+print(parenthesage("())(()"))
+print(parenthesage("(())(()"))
+assert parenthesage("((()())(()))") == True
+assert parenthesage("())(()") == False
+assert parenthesage("(())(()") == False

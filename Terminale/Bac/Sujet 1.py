@@ -9,6 +9,17 @@ def verifie(tab):
     return True
 
 
+print("verifie([0, 5, 8, 8, 9]) =", verifie([0, 5, 8, 8, 9]))
+print("verifie([8, 12, 4]) =", verifie([8, 12, 4]))
+print("verifie([-1, 4]) =", verifie([-1, 4]))
+print("verifie([5]) =", verifie([5]))
+
+assert verifie([0, 5, 8, 8, 9]) == True
+assert verifie([8, 12, 4]) == False
+assert verifie([-1, 4]) == True
+assert verifie([5]) == True
+
+
 
 #Exo 2
 urne = ['A', 'A', 'A','B', 'C', 'B', 'C','B', 'C', 'B']
@@ -31,3 +42,10 @@ def vainqueur(election):
             vainqueur = candidat #cette ligne ne sert Ã  rien !
     liste_finale = [nom for nom in election if election[nom] == nmax]
     return liste_finale
+
+election = depouille(urne)
+print(election)
+assert election == {'A': 3, 'B': 4, 'C': 3}
+
+print(vainqueur(election))
+assert vainqueur(election) == ['B']

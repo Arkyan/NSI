@@ -1,0 +1,20 @@
+SELECT usager.nom, usager.prenom, livre.titre,emprunt.retour FROM emprunt JOIN livre ON emprunt.isbn = livre.isbn JOIN usager ON emprunt.code_barre = usager.code_barre;
+
+nom	prenom	titre	retour
+MOREAU	ALAIN	Mrs Dalloway	2020-04-28
+MOREAU	ALAIN	Fondation et Empire	2020-04-28
+MOREAU	ALAIN	Le Journal d'un fou	2020-04-28
+DUBOIS	PHILIPPE	Guerre et Paix	2020-02-20
+DUBOIS	PHILIPPE	Les Voyages de Gulliver	2020-02-20
+DUBOIS	PHILIPPE	Gargantua et Pantagruel	2020-02-20
+ROBERT	PASCAL	Les Hauts de Hurlevent	2020-02-28
+ROBERT	PASCAL	Énéide	2020-02-28
+LAURENT	FRANÇOISE	Jack Barron et l'Éternité	2020-04-07
+SIMON	SANDRINE	Astérix et la Transitalique	2020-02-17
+SIMON	SANDRINE	Les Contes de Canterbury	2020-02-17
+SIMON	SANDRINE	Le Père Goriot	2020-02-17
+PETIT	SÉBASTIEN	La Planète des singes	2020-01-01
+PETIT	SÉBASTIEN	Anna Karénine	2020-01-01
+BERNARD	STÉPHANE	Les Robots	2020-02-18
+BERNARD	STÉPHANE	Le Vieil Homme et la Mer	2020-02-18
+BERNARD	STÉPHANE	Les Fils de la Médina	2020-02-18

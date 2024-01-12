@@ -1,0 +1,4 @@
+SELECT SUM(annee) AS somme_années_livres_avec_nuit_dans_le_titre FROM livre WHERE titre LIKE "%nuit%";
+
+somme_années_livres_avec_nuit_dans_le_titre
+6036

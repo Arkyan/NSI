@@ -1,0 +1,6 @@
+SELECT * FROM livre WHERE titre LIKE '%roi%'; 
+
+titre	editeur	annee	isbn
+Croisière sans escale	Editions Denoël	1990	978-2207500293
+Le Roi Lear	Éditions Actes Sud	2015	978-2330052768
+Œdipe roi	J'ai Lu	2013	978-2290080207

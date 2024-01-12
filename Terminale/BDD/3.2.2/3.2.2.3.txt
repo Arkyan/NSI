@@ -1,0 +1,4 @@
+SELECT AVG(annee) AS moyenne FROM livre WHERE titre LIKE "%nuit%";
+
+moyenne
+2012.0

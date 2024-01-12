@@ -1,0 +1,20 @@
+SELECT livre.titre, emprunt.code_barre, emprunt.retour FROM emprunt JOIN livre ON emprunt.isbn = livre.isbn;
+
+titre	code_barre	retour
+Mrs Dalloway	421921003090881	2020-04-28
+Fondation et Empire	421921003090881	2020-04-28
+Le Journal d'un fou	421921003090881	2020-04-28
+Guerre et Paix	137332830764072	2020-02-20
+Les Voyages de Gulliver	137332830764072	2020-02-20
+Gargantua et Pantagruel	137332830764072	2020-02-20
+Les Hauts de Hurlevent	533299198788609	2020-02-28
+Énéide	533299198788609	2020-02-28
+Jack Barron et l'Éternité	917547585216771	2020-04-07
+Astérix et la Transitalique	654834075188732	2020-02-17
+Les Contes de Canterbury	654834075188732	2020-02-17
+Le Père Goriot	654834075188732	2020-02-17
+La Planète des singes	934701281931582	2020-01-01
+Anna Karénine	934701281931582	2020-01-01
+Les Robots	035184062854281	2020-02-18
+Le Vieil Homme et la Mer	035184062854281	2020-02-18
+Les Fils de la Médina	035184062854281	2020-02-18  

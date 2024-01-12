@@ -1,0 +1,6 @@
+SELECT titre AS Titre, annee AS Année, isbn AS ISBN,editeur AS Editeur FROM livre WHERE titre LIKE '%roi%' ; 
+
+Titre	Année	ISBN	Editeur
+Croisière sans escale	1990	978-2207500293	Editions Denoël
+Le Roi Lear	2015	978-2330052768	Éditions Actes Sud
+Œdipe roi	2013	978-2290080207	J'ai Lu

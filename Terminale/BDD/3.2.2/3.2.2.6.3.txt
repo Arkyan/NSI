@@ -1,0 +1,6 @@
+SELECT titre, annee FROM livre WHERE titre LIKE "%nuit%" ORDER BY titre DESC;
+
+titre	annee
+Les Enfants de minuit	2010
+La Nuit des temps	2014
+La Main gauche de la nuit	2012

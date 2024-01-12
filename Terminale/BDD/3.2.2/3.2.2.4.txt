@@ -1,0 +1,5 @@
+SELECT MIN(annee) AS minimum FROM livre WHERE titre LIKE "%nuit%";
+
+minimum
+2010
+

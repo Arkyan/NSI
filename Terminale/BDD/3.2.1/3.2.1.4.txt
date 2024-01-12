@@ -1,0 +1,12 @@
+SELECT titre, annee, isbn FROM livre WHERE annee >= 2018;
+
+titre	annee	isbn
+Les Aventures de Huckleberry Finn	2020	978-2081509511
+Niourk	2018	979-1025100639
+Le Vieil Homme et la Mer	2018	978-2072762093
+L'Idiot	2019	978-1911572909
+Les Grandes Espérances	2019	978-2322185801
+Par-delà le mur du sommeil	2018	978-2824904269
+Romancero gitano	2020	978-8832957402
+Anna Karénine	2018	978-2371240087
+Les Âmes mortes	2018	978-2371240001

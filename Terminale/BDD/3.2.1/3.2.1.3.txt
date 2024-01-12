@@ -1,0 +1,7 @@
+SELECT titre FROM livre WHERE titre LIKE '%roi%'; 
+
+titre	isbn	annee
+Croisière sans escale	978-2207500293	1990
+Le Roi Lear	978-2330052768	2015
+Œdipe roi	978-2290080207	2013
+

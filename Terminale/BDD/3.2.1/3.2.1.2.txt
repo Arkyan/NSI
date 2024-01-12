@@ -1,0 +1,13 @@
+SELECT titre FROM livre WHERE annee >= 1900 AND annee <= 2021 AND editeur = 'Gallimard';
+
+titre
+Ravage
+Berlin Alexanderplatz
+Le Vieil Homme et la Mer
+L'Homme qui rétrécit
+Chroniques martiennes
+L'Étranger
+Le Voyageur imprudent
+Je suis une légende
+Seigneur de lumière
+La storia

@@ -1,0 +1,15 @@
+SELECT titre FROM livre WHERE annee < 1980;
+
+titre
+Berlin Alexanderplatz
+Le Bruit et la Fureur
+Mémoires d'Hadrien
+Contes de l'absurde
+Seconde Fondation
+Les Jeux de l'esprit
+Fictions
+Pedro Páramo
+Le monde s'effondre
+La Plaie
+Astérix chez les Belges
+Le Rouge et le Noir

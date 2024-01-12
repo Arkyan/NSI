@@ -1,0 +1,5 @@
+SELECT MAX(annee) AS maximum FROM livre WHERE titre LIKE "%nuit%";
+
+maximum
+2014
+

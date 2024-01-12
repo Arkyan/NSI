@@ -1,0 +1,5 @@
+SELECT COUNT(*) AS total_livre_avec_Nuit_dans_le_titre FROM livre WHERE titre LIKE "%nuit%"; 
+
+total_livre_avec_Nuit_dans_le_titre
+3
+

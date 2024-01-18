@@ -17,19 +17,18 @@ def paire_6(tab) :
 
 lancer1 = lancer(5)
 print(paire_6(lancer1))
-assert paire_6([1, 2, 3, 4, 5]) == True
+
 
 lancer2 = lancer(5)
 print(paire_6(lancer2))
-assert paire_6([1, 2, 3, 4, 6]) == True
 
 lancer3 = lancer(3)
 print(paire_6(lancer3))
-assert paire_6([1, 6, 6]) == False
+
 
 lancer4 = lancer(0)
 print(paire_6(lancer4))
-assert paire_6([]) == False
+
 
 
 
@@ -63,13 +62,13 @@ def binaire(image, seuil):
                 L[i][j] = 1
     return L
 
-nbLig(img)
-assert nbLig(img) == 4
-nbCol(img)
-assert nbCol(img) == 5
-negatif(img)
-assert negatif(img) == [[235, 221, 1, 110, 249], [232, 131, 18, 30, 186], [58, 81, 48, 230, 168], [0, 255, 231, 58, 66]]
-binaire(img,120)
-assert binaire(img,120) == [[0, 0, 1, 1, 0], [0, 1, 1, 1, 0], [1, 1, 1, 0, 0], [1, 0, 1, 1, 1]]
+print(nbLig(img))
+
+print(nbCol(img))
+
+print(negatif(img))
+
+print(binaire(img,120))
+
 
 

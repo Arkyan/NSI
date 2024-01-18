@@ -1,0 +1,20 @@
+SELECT l.titre, u.nom, u.prenom, u.adresse, u.cp, u.email, e.retour FROM usager AS u JOIN emprunt AS e ON u.code_barre = e.code_barre JOIN livre AS l ON e.isbn = l.isbn;
+
+titre	nom	prenom	adresse	cp	email	retour
+Mrs Dalloway	MOREAU	ALAIN	48, Rue du Château	75005	amoreau1@abc.de	2020-04-28
+Fondation et Empire	MOREAU	ALAIN	48, Rue du Château	75005	amoreau1@abc.de	2020-04-28
+Le Journal d'un fou	MOREAU	ALAIN	48, Rue du Château	75005	amoreau1@abc.de	2020-04-28
+Guerre et Paix	DUBOIS	PHILIPPE	35, Rue du Moulin	75014	pdubois5@chezmoi.net	2020-02-20
+Les Voyages de Gulliver	DUBOIS	PHILIPPE	35, Rue du Moulin	75014	pdubois5@chezmoi.net	2020-02-20
+Gargantua et Pantagruel	DUBOIS	PHILIPPE	35, Rue du Moulin	75014	pdubois5@chezmoi.net	2020-02-20
+Les Hauts de Hurlevent	ROBERT	PASCAL	95, Rue de la Gare	75005	probert9@monmail.com	2020-02-28
+Énéide	ROBERT	PASCAL	95, Rue de la Gare	75005	probert9@monmail.com	2020-02-28
+Jack Barron et l'Éternité	LAURENT	FRANÇOISE	90, Rue Principale	75005	flaurent3@monmail.com	2020-04-07
+Astérix et la Transitalique	SIMON	SANDRINE	45, Rue du Château	75020	ssimon2@abc.de	2020-02-17
+Les Contes de Canterbury	SIMON	SANDRINE	45, Rue du Château	75020	ssimon2@abc.de	2020-02-17
+Le Père Goriot	SIMON	SANDRINE	45, Rue du Château	75020	ssimon2@abc.de	2020-02-17
+La Planète des singes	PETIT	SÉBASTIEN	5, Rue du Stade	75012	spetit4@email.fr	2020-01-01
+Anna Karénine	PETIT	SÉBASTIEN	5, Rue du Stade	75012	spetit4@email.fr	2020-01-01
+Les Robots	BERNARD	STÉPHANE	131, Place de la Mairie	75015	sbernard2@chezmoi.net	2020-02-18
+Le Vieil Homme et la Mer	BERNARD	STÉPHANE	131, Place de la Mairie	75015	sbernard2@chezmoi.net	2020-02-18
+Les Fils de la Médina	BERNARD	STÉPHANE	131, Place de la Mairie	75015	sbernard2@chezmoi.net	2020-02-18

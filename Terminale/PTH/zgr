@@ -1,0 +1,43 @@
+# Définition des roues de Lorenz
+ROTOR1 = "EKMFLGDQVZNTOWYHXUSPAIBRCJ"
+ROTOR2 = "AJDKSIRUXBLHWTMCQGZNPYFVOE"
+ROTOR3 = "BDFHJLCPRTXVZNYEIWGAKMUSQO"
+
+def lorenz_decrypt(ciphertext, key_stream):
+    plaintext = ""
+    for i in range(len(ciphertext)):
+        # Récupération de la lettre chiffrée
+        encrypted_char = ciphertext[i]
+        # Déchiffrement avec la clé de flux
+        decrypted_char = chr((ord(encrypted_char) - ord(key_stream[i])) % 26 + ord('A'))
+        plaintext += decrypted_char
+    return plaintext
+
+def generate_key_stream(key, length):
+    key_stream = ""
+    for _ in range(length):
+        for rotor in key:
+            key_stream += rotor[0]
+            rotor = rotor[1:] + rotor[0]
+    return key_stream
+
+def main():
+    ciphertext = "AG8ZBBNY8AORWN5R9VJY9/EEVR5LMDE/UKTHP4JEZPZB3IYFCYWXWQMY/3NY/LOJPFP3VLU/EUIAZ45USM8K8OL/54T/4LDRXWATKB/NS/ZFI93AXFBMRHECYKAS3I/KRUOUSJMCXMJJCOENEA5EOITA9NMBCLJ9QCJBMBAPMGN8IJCWDA3T4QCZQJNGPKGXGDHU385W5UFTRAH8QWUAPGUG4TX8P/5GQE8TA4TVZYGX5EL33I3ZEYKJGNIWIWYXU5KRUTZOCYYKEESUPPBCUDKO4YWXLSM9WGQ9YXG5A/WET/HH8QETS5GOFILOF3PIRJHAEQQXYROUJXQBYMSS8PZH4TGBZEKZPAHFGZ534RHZ3LITNE/PKKDTTBVQYPKSUPH5/E44/CTC5Q9AEG4FRCIIWX8CMTH5Z/HDGFXYK94F5IER9PUENO8YBG9VXH98WHBJT5DLHHPNAXZFIPBUMJ3WLHPXIE/PP/AY8TSPP95MWHQHUNDJNVIJJB4AJFFZS89YRBIGP4PEQZHQQH9Y8N3RKTETMFP8KQ"
+    
+    # Clé utilisée pour générer le flux de clé
+    key = [ROTOR1, ROTOR2, ROTOR3]
+    
+    # Longueur du flux de clé
+    key_length = len(ciphertext)
+    
+    # Générer le flux de clé
+    key_stream = generate_key_stream(key, key_length)
+    
+    # Décrypter le message
+    decrypted_message = lorenz_decrypt(ciphertext, key_stream)
+    
+    print("Message décodé :")
+    print(decrypted_message)
+
+if __name__ == "__main__":
+    main()

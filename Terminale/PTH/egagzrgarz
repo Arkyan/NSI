@@ -1,0 +1,43 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Paramètres du système de Lorenz
+sigma = 10
+rho = 28
+beta = 8/3
+
+# Conditions initiales
+x0, y0, z0 = 0, 1, 20
+
+# Fonctions décrivant le système de Lorenz
+def lorenz_system(x, y, z):
+    dx_dt = sigma * (y - x)
+    dy_dt = x * (rho - z) - y
+    dz_dt = x * y - beta * z
+    return dx_dt, dy_dt, dz_dt
+
+# Méthode d'Euler pour résoudre les équations différentielles
+def euler_integration(x, y, z, dt):
+    dx_dt, dy_dt, dz_dt = lorenz_system(x, y, z)
+    x += dx_dt * dt
+    y += dy_dt * dt
+    z += dz_dt * dt
+    return x, y, z
+
+# Simulation
+dt = 0.01
+num_steps = 10000
+x, y, z = x0, y0, z0
+trajectory = np.empty((num_steps, 3))
+for step in range(num_steps):
+    x, y, z = euler_integration(x, y, z, dt)
+    trajectory[step] = [x, y, z]
+
+# Visualisation de la trajectoire
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+ax.plot(trajectory[:,0], trajectory[:,1], trajectory[:,2])
+ax.set_xlabel('X')
+ax.set_ylabel('Y')
+ax.set_zlabel('Z')
+plt.show()

@@ -1,4 +1,4 @@
-
+#Exo 1
 def ajoute_dictionnaires(d1, d2):
     d = d1
     for k, v in d2.items():
@@ -16,7 +16,9 @@ assert ajoute_dictionnaires({1: 5, 2: 7}, {2: 9, 3: 11}) == {1: 5, 2: 16, 3: 11}
 assert ajoute_dictionnaires({}, {2: 9, 3: 11}) == {2: 9, 3: 11}
 assert ajoute_dictionnaires({1: 5, 2: 7}, {}) == {1: 5, 2: 7}
 
+print('-------------------')
 
+#Exo 2
 from random import randint
 
 def nbre_coups():

@@ -22,7 +22,7 @@ assert selection_enclos(animaux, 2) == [{'nom':'Medor', 'espece':'chien', 'age':
 assert selection_enclos(animaux, 7) == []
     
 
-
+print('-------------------')
 
 
 #Exo 2

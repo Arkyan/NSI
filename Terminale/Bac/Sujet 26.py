@@ -1,9 +1,4 @@
-"""
-Exercice N°1
-"""
-
-print("\033[92mExercice N°1\033[0m")
-
+#Exo 1
 def multiplication(n1, n2) :
     s=0
     if n1==0 or n2==0:
@@ -26,20 +21,10 @@ assert multiplication(-4, -8) == 32
 assert multiplication(-2, 6) == -12
 assert multiplication(-2, 0) == 0
 
-print()
+print("--------------------")
 
-"""
-Exercice N°2
-"""
-
-print("\033[92mExercice N°2\033[0m")
-
+#Exo 2
 def dichotomie(tab, x):
-    """
-    tab : tableau d'entiers trie dans l'ordre croissant
-    x   : nombre entier
-    La fonction renvoie True si tab contient x et False sinon
-    """
     debut = 0
     fin = len(tab) - 1
     while debut <= fin:

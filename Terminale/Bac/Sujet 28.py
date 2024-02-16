@@ -1,4 +1,5 @@
-print("\033[92mExercice N°1\033[0m")
+#Exo 1
+print("---------------------------------")
 def moyenne (tab):
     moy = 0
     for i in range(len(tab)):
@@ -14,14 +15,9 @@ assert moyenne([1]) == 1
 assert moyenne([1, 2, 3, 4, 5, 6, 7]) == 4
 assert moyenne([1, 2]) == 1.5
 
-print()
+print("---------------------------------")
 
-"""
-Exercice N°2
-"""
-
-print("\033[92mExercice N°2\033[0m")
-
+#Exo 2
 def dichotomie(tab, x):
     if len(tab) == 0:
         return False, 1
@@ -48,3 +44,5 @@ assert dichotomie([15, 16, 18, 19, 23, 24, 28, 29, 31, 33], 28) == True
 assert dichotomie([15, 16, 18, 19, 23, 24, 28, 29, 31, 33], 27) == (False, 3)
 assert dichotomie([15, 16, 18, 19, 23, 24, 28, 29, 31, 33], 1) == (False, 2)
 assert dichotomie([], 28) == (False, 1)
+
+print("---------------------------------")

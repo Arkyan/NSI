@@ -1,9 +1,3 @@
-"""
-Exercice N°1
-"""
-
-print("\033[92mExercice N°1\033[0m")
-
 a = {'F':['B','G'], 'B':['A','D'], 'A':['',''], 'D':['C','E'], 'C':['',''], 'E':['',''], 'G':['','I'], 'I':['','H'], 'H':['','']}
 
 def taille(arbre, lettre):
@@ -22,17 +16,11 @@ def taille(arbre, lettre):
     else:
         return 1
 
-print("taille(a, 'F') ->", taille(a, 'F'))
+print("taille(a, 'F') =", taille(a, 'F'))
 
 assert taille(a, 'F') == 9
 
 print()
-
-"""
-Exercice N°2
-"""
-
-print("\033[92mExercice N°2\033[0m")
 
 def tri_selection(tab):
     N = len(tab)
@@ -46,6 +34,6 @@ def tri_selection(tab):
 liste = [41, 55, 21, 18, 12, 6, 25]
 
 tri_selection(liste)
-print("liste ->", liste)
+print("liste =", liste)
 
 assert liste == [6, 12, 18, 21, 25, 41, 55]

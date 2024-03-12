@@ -5,33 +5,28 @@ class Arbre:
         self.fg = None
         self.fd = None
 
-
 def taille(a):
-    if a == None:
+    if a is None:
         return 0
-    return 1+taille(a.fg)+taille(a.fd)
+    if (a.fg is None) and (a.fd is None):
+        return 1
+    else:
+        return 1 + taille(a.fg) + taille(a.fd)
 
-def hauteur(a):
-    if a == None:
-        return 0
-    return 1+max(hauteur(a.fg), hauteur(a.fd))
+a = Arbre(1)
+a.fg = Arbre(4)
+a.fd = Arbre(0)
+a.fd.fd = Arbre(7)
 
-abr = Arbre(0)
-a1 = Arbre(1)
-a3 = Arbre(3)
-a2 = Arbre(2)
-a4 = Arbre(4)
-a5 = Arbre(5)
-a6 = Arbre(6)
+print("taille(None) =", taille(None))
+print("taille(Arbre(1)) =", taille(Arbre(1)))
+print("taille(a) =", taille(a))
 
-a4.fd = a6
-a2.fg = a4
-a2.fd = a5
-a1.fg = a3
-abr.fg = a1
-abr.fd = a2
+assert taille(None) == 0
+assert taille(Arbre(1)) == 1
+assert taille(a) == 4
 
-
+print("--------------------")
 
 #Exo 2
 def ajoute(indice, element, liste):
@@ -49,11 +44,10 @@ def ajoute(indice, element, liste):
         L[nbre_elts] = element
     return L
 
-print(ajoute(1, 4, [7, 8, 9]))
+print("ajoute(1, 4, [7, 8, 9])", ajoute(1, 4, [7, 8, 9]))
+print("ajoute(3, 4, [7, 8, 9])", ajoute(3, 4, [7, 8, 9]))
+print("ajoute(4, 4, [7, 8, 9])", ajoute(4, 4, [7, 8, 9]))
+
 assert ajoute(1, 4, [7, 8, 9]) == [7, 4, 8, 9]
-
-print(ajoute(3, 4, [7, 8, 9]))
 assert ajoute(3, 4, [7, 8, 9]) == [7, 8, 9, 4]
-
-print(ajoute(4, 4, [7, 8, 9]))
 assert ajoute(4, 4, [7, 8, 9]) == [7, 8, 9, 4]

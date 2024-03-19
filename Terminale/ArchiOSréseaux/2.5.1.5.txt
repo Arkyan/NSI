@@ -1,0 +1,3 @@
+Un des avantages d'avoir plusieurs processeurs dans un système sur une puce (SoC) est la possibilité d'améliorer les performances en répartissant 
+la charge de travail. Avec plusieurs processeurs travaillant en parallèle, les tâches peuvent être exécutées plus rapidement, ce qui entraîne 
+une augmentation de la vitesse de traitement et une meilleure capacité de réponse du système.

@@ -1,0 +1,2 @@
+Un inconvénient de la miniaturisation des circuits imprimés est que cela peut rendre la conception et la fabrication plus complexes et coûteuses en 
+raison de la manipulation délicate des composants et des pistes de connexion, ainsi que des défis associés à la gestion thermique. 

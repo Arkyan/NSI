@@ -1,0 +1,4 @@
+Les systèmes sur puces intègrent généralement des bus ayant des vitesses de transmission différentes pour optimiser les performances, 
+économiser de l'énergie et réduire les interférences électromagnétiques. Cela permet d'adapter les vitesses de transmission aux besoins spécifiques 
+des différents composants du système, d'éviter les goulets d'étranglement, d'optimiser les coûts de production et d'améliorer la 
+fiabilité globale du système.

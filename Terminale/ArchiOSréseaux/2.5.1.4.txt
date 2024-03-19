@@ -1,0 +1,7 @@
+Mémoire Morte (ROM) :
+La mémoire morte contient des données préenregistrées qui ne peuvent pas être modifiées après la fabrication. Elle stocke généralement le micrologiciel ou le programme de démarrage.
+
+Mémoire Vive (RAM) :
+La mémoire vive permet la lecture et l'écriture de données par le processeur. Les données sont perdues lorsque l'alimentation est coupée.
+
+Dans les microcontrôleurs, la mémoire programme est souvent une mémoire morte car les programmes sont conçus pour rester stables, évitant ainsi les modifications accidentelles et réduisant les coûts de production.

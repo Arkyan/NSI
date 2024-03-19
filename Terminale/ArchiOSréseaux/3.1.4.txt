@@ -1,0 +1,3 @@
+ Quel est le rôle du système d’exploitation (OS) ?
+
+Partager la machine physique entre les différents programmes et bâtir une IHM accessible à l’utilisateur. 

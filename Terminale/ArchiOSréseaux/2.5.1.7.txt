@@ -1,0 +1,3 @@
+Un des avantages d'un circuit imprimé de petite taille est qu'il nécessite moins d'espace physique, ce qui permet une intégration plus compacte et 
+efficace des composants électroniques dans les dispositifs finaux. Cela peut conduire à des appareils plus portables, plus légers et plus discrets, 
+tout en réduisant les coûts de fabrication associés à la production de matériaux et de cartes de circuits imprimés plus grands.

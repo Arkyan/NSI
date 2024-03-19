@@ -1,0 +1,9 @@
+1 ---- Efficacité énergétique et faible consommation d'énergie : Les SoC sont conçus pour être très économes en 
+énergie, ce qui est crucial pour les applications embarquées dans les véhicules. Ils peuvent fonctionner 
+avec des batteries ou des sources d'alimentation limitées, ce qui les rend idéaux pour les dispositifs 
+automobiles qui nécessitent une autonomie prolongée sans recharge fréquente.
+
+2 ---- Intégration de multiples fonctionnalités sur une seule puce : Les SoC intègrent plusieurs composants essentiels 
+sur une seule puce, y compris le processeur, la mémoire, les contrôleurs d'entrée/sortie et parfois même des 
+unités de traitement spécialisées pour des tâches spécifiques telles que le traitement du signal ou le traitement 
+d'image. Cette intégration réduit la complexité du système, améliore sa fiabilité et réduit les coûts de fabrication et de maintenance.

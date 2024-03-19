@@ -1,0 +1,7 @@
+CPU : Central Processing Unit, traiter les données et les instructions.
+GPU : Graphical Processing Unit, traiter les données graphiques.
+DSP : Digital Signal Processor, traiter les données audio.
+RAM : Random Access Memory, stocker les données et les instructions.
+Autres : Caméra, Location, Capteurs, etc.
+Northbridge : Pont nord, connecter le CPU, la RAM et le GPU.
+Modules de commmunications : WIFI,USB,FM RADIO  

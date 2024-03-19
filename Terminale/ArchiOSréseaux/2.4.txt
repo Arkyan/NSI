@@ -1,0 +1,6 @@
+Exynos 990 : 2.73GHz
+Exynos 1080 : 2,8 GHz
+Exynos 2100 : 2.9 GHz
+A13-Bionic : 1,8 GHz
+Snapdragon 865 : 2.84 GHz
+Kirin 990 : 2.86 GHz

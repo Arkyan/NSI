@@ -1,0 +1,7 @@
+1. Compteur de programme (CP ou IP) :
+   - Emplacement : Dans l'unité de contrôle du processeur.
+   - Rôle : Stocke l'adresse mémoire de l'instruction suivante à exécuter.
+
+2. Registre d'instruction (RI ou IR) :
+   - Emplacement : Également dans l'unité de contrôle du processeur.
+   - Rôle : Contient temporairement l'instruction en cours de traitement avant son exécution.

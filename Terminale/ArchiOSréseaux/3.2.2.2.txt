@@ -1,0 +1,11 @@
+Processus           | P1 | P2 | P3 | P4 |                          
+--------------------|
+Durée en quantum    |                     
+--------------------|
+Date d'arrivée      |                              
+--------------------|
+Temps de terminaison|                       
+--------------------|
+Temps d'exécution   |                
+--------------------|
+Temps d'attente     |                            

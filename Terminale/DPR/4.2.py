@@ -1,21 +1,21 @@
-def tri_fusion(liste):
-    if len(liste) <= 1:
-        return liste
-    else:
-        milieu = len(liste) // 2
-        gauche = tri_fusion(liste[:milieu])
-        droite = tri_fusion(liste[milieu:])
-        return fusion(gauche, droite)
+def fusion(list1, list2) :
+    if len(list1) == 0 :
+        return list2
+    if len(list2) == 0 :
+        return list1
+    if list1[0] < list2[0] :
+        return [list1[0]] + fusion(list1[1:], list2)
+    else :
+        return [list2[0]] + fusion(list1, list2[1:])
 
-def fusion(partieA, partieB):
-    if len(partieA) == 0:
-        return partieB
-    elif len(partieB) == 0:
-        return partieA
-    elif partieA[0] < partieB[0]:
-        return [partieA[0]] + fusion(partieA[1:], partieB)
-    else:
-        return [partieB[0]] + fusion(partieA, partieB[1:])
+def tri_fusion(list) :
+    if len(list) <= 1 :
+        return list
+    else :
+        middle = len(list) // 2
+        left = tri_fusion(list[:middle])
+        right = tri_fusion(list[middle:])
+        return fusion(left, right)
     
 list1 = [35, 13, 4, 22, 7, 17, 3]
 list2 = [39, 28, 44, 4, 10, 80, 11]

@@ -1,0 +1,13 @@
+Ce qui limite concrètement le nombre de processus pouvant être lancés en même temps est principalement la quantité de ressources système disponibles,
+telles que la mémoire, le CPU et les périphériques.
+
+Un système d'exploitation multitâche est capable d'exécuter plusieurs processus en même temps en partageant efficacement les ressources du
+système entre eux.
+
+Lorsque plusieurs processus fonctionnent "en même temps" sur un ordinateur ne disposant que d'un seul microprocesseur (un cœur), le système
+d'exploitation doit utiliser des techniques d'ordonnancement pour attribuer du temps CPU à chaque processus, simulant ainsi un 
+fonctionnement simultané.
+
+Au démarrage de l'ordinateur, le BIOS (Basic Input/Output System) effectue un autotest matériel (POST) pour vérifier le bon fonctionnement
+des composants matériels, puis charge le chargeur d'amorçage (bootloader) qui démarre le système d'exploitation à partir du 
+périphérique de stockage approprié.

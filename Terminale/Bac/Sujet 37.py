@@ -46,3 +46,6 @@ adresse3 = AdresseIP('192.168.0.0')
 print("Adresse 1 est réservée ? = ",adresse1.est_reservee())
 print("Adresse 3 est réservée ? =",adresse3.est_reservee())
 print(adresse2.adresse_suivante().adresse)
+
+assert adresse1.est_reservee() == False
+assert adresse3.est_reservee() == True

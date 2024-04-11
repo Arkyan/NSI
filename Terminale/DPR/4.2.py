@@ -18,7 +18,7 @@ def tri_fusion(list) :
         return fusion(left, right)
     
 list1 = [35, 13, 4, 22, 7, 17, 3]
-list2 = [39, 28, 44, 4, 10, 80, 11]
+list2 = [39, 28, 44, 4, 10, 80, 11] 
 list3 = [22, 11, 3, 55, 37, 30, 44, 59, 2]
 list4 = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 print ("La liste", list1, "triée par tri fusion est : ", tri_fusion(list1))
